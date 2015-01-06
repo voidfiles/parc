@@ -120,3 +120,9 @@ LOGGING = {
         }
     }
 }
+
+SIMPLEAPI_ENABLE_CORS = True
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_URLS_REGEX = r'^/api/.*$'
+CORS_ORIGIN_REGEX_WHITELIST = ('^(https?://).*$', )
+
