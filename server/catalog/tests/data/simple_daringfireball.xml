@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Daring Fireball</title>
+<subtitle>By John Gruber</subtitle>
+<link rel="alternate" type="text/html" href="http://daringfireball.net/" />
+<link rel="self" type="application/atom+xml" href="http://daringfireball.net/feeds/main" />
+<id>http://daringfireball.net/feeds/main</id>
+
+<updated>2014-12-06T22:36:42Z</updated><rights>Copyright © 2014, John Gruber</rights><entry>
+	<title>Amazon Elements: Amazon Unveils Its Own Diapers and Baby Wipes</title>
+	<link rel="alternate" type="text/html" href="http://recode.net/2014/12/04/amazon-unveils-its-own-line-of-diapers-confirming-partners-biggest-fears/" />
+	<link rel="shorturl" type="text/html" href="http://df4.us/neg" />
+	<link rel="related" type="text/html" href="http://daringfireball.net/linked/2014/12/06/amazon-diapers" />
+	<id>tag:daringfireball.net,2014:/linked//6.30328</id>
+	<published>2014-12-06T21:56:08Z</published>
+	<updated>2014-12-06T21:56:09Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jason Del Ray, reporting for Recode:</p>
+
+<blockquote>
+  <p>Called Amazon Elements, the line of diapers and baby wipes will
+only be available to customers who belong to the Amazon Prime
+membership program, adding another item to the growing list of
+membership perks. By working directly with a manufacturer, Amazon
+will be able to price the brand aggressively, with a 40-count
+package of diapers starting at $7.99. That works out to about 19
+cents a diaper, compared to competitor prices that mostly range
+from 24 cents to 34 cents.</p>
+
+<p>As a result, some people will view the launch as a shot across the
+bow at the big diaper brands, Huggies and Pampers, that sell their
+products on Amazon. Sellers on Amazon already gripe that Amazon
+sells the same products as they do. Now it is building a direct
+relationship with a supplier that allows it to undercut some of
+its own partners in a more significant way.</p>
+</blockquote>
+
+<p>&#8220;Some people&#8221;? Who <em>doesn&#8217;t</em> think this is a &#8220;shot across the bow at the big diaper brands&#8221;?</p>
+
+<div>
+<a  title="Permanent link to ‘Amazon Elements: Amazon Unveils Its Own Diapers and Baby Wipes’"  href="http://daringfireball.net/linked/2014/12/06/amazon-diapers">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry></feed><!-- THE END -->
