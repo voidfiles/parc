@@ -1,4 +1,4 @@
-from schematics.types import StringType, IntType, URLType, DateTimeType
+from schematics.types import StringType, IntType, URLType, DateTimeType, BooleanType
 from schematics.types.compound import ModelType, ListType
 
 from .base import ParcSchema
@@ -21,3 +21,5 @@ class ArticleSchema(ParcSchema):
     date_updated = DateTimeType()
     origin = ModelType(OriginSchema)
     tags = ListType(ModelType(TagSchema))
+    archived = BooleanType()
+    deleted = BooleanType()

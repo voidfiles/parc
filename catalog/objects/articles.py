@@ -13,7 +13,7 @@ class OriginApiObject(ParcApiObject):
             'title': model.title,
             'url': model.url,
             'date_saved': model.created,
-            'date_updated': model.updated,
+            'date_updated': model.updated
         }
 
         return cls.get_schema()(data)
@@ -38,6 +38,8 @@ class ArticleApiObject(ParcApiObject):
             'date_saved': model.created,
             'date_updated': model.updated,
             'html': model.article_info.full_text_html,
+            'deleted': model.deleted,
+            'archived': model.archived,
         }
 
         if model.origin:

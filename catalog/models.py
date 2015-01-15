@@ -150,3 +150,11 @@ class Article(models.Model):
             return social_title
 
         return self.title
+
+    @property
+    def deleted(self):
+        return self.status == ARTICLE_STATUS.DELETED
+
+    @property
+    def archived(self):
+        return self.status == ARTICLE_STATUS.ARCHIVED
