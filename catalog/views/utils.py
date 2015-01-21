@@ -65,8 +65,8 @@ def pk_queryset_paginate(params, queryset):
     }
 
     if objs:
-        meta_data['max_id'] = objs[0].pk
-        meta_data['min_id'] = objs[-1].pk
+        meta_data['max_id'] = unicode(objs[0].pk)
+        meta_data['min_id'] = unicode(objs[-1].pk)
 
     return objs, meta_data
 
