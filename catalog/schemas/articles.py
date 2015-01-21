@@ -1,4 +1,4 @@
-from schematics.types import StringType, IntType, URLType, DateTimeType, BooleanType
+from schematics.types import StringType, URLType, DateTimeType, BooleanType
 from schematics.types.compound import ModelType, ListType
 
 from .base import ParcSchema
@@ -13,7 +13,7 @@ class OriginSchema(ParcSchema):
 
 
 class ArticleSchema(ParcSchema):
-    id = IntType()
+    id = StringType()
     url = URLType(required=True)
     title = StringType()
     html = StringType()
