@@ -105,3 +105,23 @@ class TestArticles(MockModel, TestCase):
 
         article = Article.objects.get(id=resp['data']['id'])
         self.assertEqual(article.status, ARTICLE_STATUS.UNREAD)
+
+    def test_article_since(self):
+        a1 = Article(title='123', url='http://example.com/123')
+        a1.save()
+        a2 = Article(title='124', url='http://example.com/124')
+        a2.save()
+        a3 = Article(title='125', url='http://example.com/125')
+        a3.save()
+        a4 = Article(title='126', url='http://example.com/126')
+        a4.save()
+
+        assert Article.objects.filter(updated__gte=a1.updated).count() == 4
+
+        a2.title = "127"
+        a2.save()
+        a4.title = "128"
+        a4.save()
+
+        assert Article.objects.filter(updated__gte=a2.updated).count() == 2
+

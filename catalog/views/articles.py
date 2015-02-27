@@ -1,3 +1,5 @@
+import arrow
+
 from paucore.utils.python import cast_int
 from simpleapi import api_export, SimpleHttpException
 
@@ -27,6 +29,11 @@ def create_article(request):
 @article_view(collection=True)
 def get_articles(request):
     articles = Article.objects.all()
+    since = request.GET.get('since')
+    if since:
+        since_date = arrow.get(since).datetime
+        articles = articles.filter(updated__gte=since_date)
+
     articles = paginate_queryset_for_request(request, articles, pk_queryset_paginate)
 
     return articles
